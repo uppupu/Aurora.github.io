@@ -14,7 +14,7 @@
 <meta property="og:description" content="Markdown的基本编写规则第二小标题：字体这是斜体这也是斜体这是粗体这是粗斜体 换行可以在一句话后面敲两个空格也可以两句话间有一个空行，如A： B：还可以像这样一整句话中间加使这句话变成两个 引用 这是一个引用，且引用可以嵌套  这是引用的引用  可以多层引用    插入链接：【名称】（地址）【这是三一的主页】(https:&#x2F;&#x2F;uppupu.github.io)也可以直接用地址，但要把括号变成">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-23T08:43:14.000Z">
-<meta property="article:modified_time" content="2023-11-24T09:07:54.966Z">
+<meta property="article:modified_time" content="2023-11-24T10:13:50.734Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -129,10 +129,23 @@
 <hr>
 <h2 id="删除线：在要删的地方前后添两个"><a href="#删除线：在要删的地方前后添两个" class="headerlink" title="删除线：在要删的地方前后添两个~"></a>删除线：在要删的地方前后添两个~</h2><p><del>这是要删除的文字</del></p>
 <h2 id="下划线：在首尾添加与"><a href="#下划线：在首尾添加与" class="headerlink" title="下划线：在首尾添加与"></a>下划线：在首尾添加<u>与</u></h2><p><u>这行文字加下划线</u></p>
-<h2 id="代码块：分成两种"><a href="#代码块：分成两种" class="headerlink" title="代码块：分成两种"></a>代码块：分成两种</h2><h3 id="行之间的"><a href="#行之间的" class="headerlink" title="行之间的"></a>行之间的</h3><p>‘Hello ‘world</p>
-<h3 id="块之间-要三个反引号"><a href="#块之间-要三个反引号" class="headerlink" title="块之间:要三个反引号"></a>块之间:要三个反引号</h3><p>‘’’cpp<br>#include&lt;stdio.h&gt;<br>int main(){<br>    printf(“Hello world”);<br>}<br>‘’’</p>
-<h2 id="表格：用-分割不同单元格，用-分割表头和其他行，：-指表头与单元格左对齐，-：指右对齐，-：-：指居中"><a href="#表格：用-分割不同单元格，用-分割表头和其他行，：-指表头与单元格左对齐，-：指右对齐，-：-：指居中" class="headerlink" title="表格：用|分割不同单元格，用-分割表头和其他行，：-指表头与单元格左对齐，-：指右对齐， ：-：指居中"></a>表格：用|分割不同单元格，用-分割表头和其他行，：-指表头与单元格左对齐，-：指右对齐， ：-：指居中</h2><p>|物品      |数量   |价格<br>|——-  |—–：  |：—-：|<br>|计算机    |20     |￥ </p>
-<h2 id="特殊语法符号：前面加-表示符号本身："><a href="#特殊语法符号：前面加-表示符号本身：" class="headerlink" title="特殊语法符号：前面加\表示符号本身："></a>特殊语法符号：前面加\表示符号本身：</h2><p>\指除法<br>*指乘法<br>+<br>-<br>.输出.</p>
+<h2 id="代码块：分成两种"><a href="#代码块：分成两种" class="headerlink" title="代码块：分成两种"></a>代码块：分成两种</h2><h3 id="行之间的"><a href="#行之间的" class="headerlink" title="行之间的"></a>行之间的</h3><p><code>Hello </code>world</p>
+<h3 id="块之间-要三个反引号"><a href="#块之间-要三个反引号" class="headerlink" title="块之间:要三个反引号"></a>块之间:要三个反引号</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="表格：用-分割不同单元格，用-分割表头和其他行，：-指表头与单元格左对齐，-指右对齐，-指居中"><a href="#表格：用-分割不同单元格，用-分割表头和其他行，：-指表头与单元格左对齐，-指右对齐，-指居中" class="headerlink" title="表格：用|分割不同单元格，用-分割表头和其他行，：-指表头与单元格左对齐，-:指右对齐， :-:指居中"></a>表格：用|分割不同单元格，用-分割表头和其他行，：-指表头与单元格左对齐，-:指右对齐， :-:指居中</h2><table>
+<thead>
+<tr>
+<th>物品</th>
+<th align="right">数量</th>
+<th align="center">价格</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>计算机</td>
+<td align="right">20</td>
+<td align="center">￥</td>
+</tr>
+</tbody></table>
+<h2 id="特殊语法符号-前面加-表示符号本身："><a href="#特殊语法符号-前面加-表示符号本身：" class="headerlink" title="特殊语法符号:前面加\表示符号本身："></a>特殊语法符号:前面加\表示符号本身：</h2><p>\指除法<br>*指乘法<br>+<br>-<br>.输出.</p>
 <h1 id="Markdown的高级用法"><a href="#Markdown的高级用法" class="headerlink" title="Markdown的高级用法"></a>Markdown的高级用法</h1><h2 id="制作待办：-指未完成；-x-指已完成"><a href="#制作待办：-指未完成；-x-指已完成" class="headerlink" title="制作待办：-[]指未完成；-[x]指已完成"></a>制作待办：-[]指未完成；-[x]指已完成</h2><p>-[]背诵单词<br>-[x]学语法</p>
 <h2 id="书写公式：-表示整行的公式，a-2表示a的平方"><a href="#书写公式：-表示整行的公式，a-2表示a的平方" class="headerlink" title="书写公式：$$表示整行的公式，a^2表示a的平方"></a>书写公式：$$表示整行的公式，a^2表示a的平方</h2><p>$$E&#x3D;mc^2$$</p>
 <h2 id="绘制流程图，模板如下："><a href="#绘制流程图，模板如下：" class="headerlink" title="绘制流程图，模板如下："></a>绘制流程图，模板如下：</h2><p>‘’’mermaid<br>flowchat<br>st&#x3D;&gt;start:输入你想要一开始进入判断的首要条件<br>op&#x3D;&gt;operation:输入判断标准<br>cond&#x3D;&gt;condition:做出判断yer or no?<br>e&#x3D;&gt;end</p>
